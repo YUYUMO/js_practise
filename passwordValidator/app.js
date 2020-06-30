@@ -12,7 +12,9 @@
 // isValidPassword('hello1', 'dogLuvr') //false
 
 function isValidPassword(password, username) {
-  if (password.length >= 8 && password.indexOf(' ') === -1 && password.includes(username) === false) {
+  if (password.length >= 8 &&
+    password.indexOf(' ') === -1 &&
+    password.includes(username) === false) {
     return true;
   }
   return false;
