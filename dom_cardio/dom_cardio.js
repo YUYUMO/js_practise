@@ -41,7 +41,7 @@ const myHTML = `
   </div>
 `;
 
-const pDiv = document.createRange().createContextualFragment(myHTML);
+const pDiv = document.createRange().createctxualFragment(myHTML);
 // put this div before the unordered list from above
 div.insertBefore(pDiv, list);
 // add a class to the second paragraph called warning
@@ -78,7 +78,7 @@ cards += generatePlayerCard('wes', 30, 150);
 cards += generatePlayerCard('john', 28, 160);
 cards += generatePlayerCard('charlotte', 32, 170);
 
-const cardsHTML = document.createRange().createContextualFragment(cards);
+const cardsHTML = document.createRange().createctxualFragment(cards);
 // append those cards to the div
 cardsDiv.appendChild(cardsHTML);
 // put the div into the DOM just before the wrapper element
